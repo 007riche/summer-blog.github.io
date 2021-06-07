@@ -33,17 +33,17 @@
     </nav>
     <div class="container">
         <div class="baner">
-        <img src="img/intrusion.png" alt="">
     </div>
-    <div class="card mb-3" style="max-width: 540px;">
+
+    <div class="card border-0 " style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img class="profile rounded-circle" src="img/Profile.jpg" alt="profile image">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">@007riche</h5>
+             <p class="card-text"><small class="text-muted ">5mins read</small></p>
             </div>
           </div>
         </div>
@@ -64,24 +64,36 @@
     The confusion matrix usually treats binary classification type of problems where the number of possible values of the results is two.</p>
 <p>In binary classification type of problems such intrusion detection, the confusion matrix is a technique that helps to summarize the performance of classification of
     the model of the machine learning algorithm, classification which is based on a set of data where the final outcome is already known from a historical record.</p>
-    <img src="img/eXBC.png" alt="">
+    
+    <figure class="figure">
+        <img src="img/eXBC.png" class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption">Figure: example of binary classification model</figcaption>
+      </figure>
 <p>
     The confusion matrix consists a matrix of dimension equal to two where the columns are the outcome predicted values and the rows the actual values which are already known.
 </p>
-<img src="img/CCM.png" alt="">
+
+<figure class="figure">
+  <img src="img/CCM.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">Figure: example of confusion matrix</figcaption>
+</figure>
    <h2>Meaning of confusion matrix table in intrusion detection</h2> 
 The confusion matrix of an intrusion detection system can be presented as follow:
-<img src="img/CyCM.png" alt="">
+
+<figure class="figure">
+  <img src="img/CyCM.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">Figure: confusion matrix of an IDS</figcaption>
+</figure>
 
 <p>
     It is to be recalled that the purpose of an IDS is to prevent against attack by detecting these attack that might be going in real time are labeled as positive values (label “Attack”), 
     so, conversely the Normal values here means that there is no active attack going on, so they are negative (labeled “Normal”).
 The followings are the possibilities to classify events and depicted in the above table:
 <ul>
-    <li>True positive (TP): Intrusions that are successfully detected by the IDS. So, the network is undergoing attacks and some decision should be taken to mitigate them.</li>
-    <li>False positive (FP): Normal/non-intrusive behavior that is wrongly classified as intrusive by the IDS. The traffic is under normal situation</li>
-    <li>True Negative (TN): Normal/non-intrusive behavior that is successfully labeled as normal/non-intrusive by the IDS. The model successfully classified attacks as attack</li>
-    <li>False Negative (FN): Intrusions that are missed by the IDS, and classified as normal/non-intrusive. Here the model classified the attacks’ traffic as normal.</li>
+    <li><h4>True positive (TP):</h4> Intrusions that are successfully detected by the IDS. So, the network is undergoing attacks and some decision should be taken to mitigate them.</li>
+    <li><h4>False positive (FP):</h4> Normal/non-intrusive behavior that is wrongly classified as intrusive by the IDS. The traffic is under normal situation</li>
+    <li><h4>True Negative (TN):</h4> Normal/non-intrusive behavior that is successfully labeled as normal/non-intrusive by the IDS. The model successfully classified attacks as attack</li>
+    <li><h4>False Negative (FN):</h4> Intrusions that are missed by the IDS, and classified as normal/non-intrusive. Here the model classified the attacks’ traffic as normal.</li>
 </ul>
 
 </p>
@@ -109,7 +121,11 @@ In real enterprises, the security operation team in companies are really preoccu
 
 One of the most commonly used metrics while performing classification is accuracy. 
 The accuracy of a model (through a confusion matrix) is calculated using the given formula below:  <br>
-<img src="img/accuracy.png" alt=""> <br>
+
+<figure class="figure">
+  <img src="img/accuracy.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">Figure: Formula of accuracy</figcaption>
+</figure> <br>
 Precision and recall are widely used and popular metrics for classification. <br> 
 
 <p>
@@ -117,11 +133,19 @@ Precision and recall are widely used and popular metrics for classification. <br
     Thus, it measures the accuracy of a predicted positive outcome. It is also known as the positive predictive value. 
     The formula to calcite the precision is:
 </p>
-<img src="img/precision.png" alt=""> <br>
+
+<figure class="figure">
+  <img src="img/precision.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">Figure: Formula of precision</figcaption>
+</figure> <br>
 
 Recall is useful to measure the strength of a model to predict positive outcomes, and it is also known as the sensitivity of a model. 
 The formula to calculate the recall is as follow: <br>
-<img src="img/recall.png" alt=""> <br>
+
+<figure class="figure">
+  <img src="img/recall.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">Figure: Formula of recall</figcaption>
+</figure> <br>
 
 <p>
     F-measure is also known as F-value which uses both precision score and recall score of a classifier. 
@@ -130,15 +154,28 @@ The formula to calculate the recall is as follow: <br>
     For the classification of positive instances, it helps to understand the tradeoff between correctness and coverage. 
     The general formula for calculating F-measure is given below:
 </p>
-<img src="img/Fbeta.png" alt=""> <br>
+
+<figure class="figure">
+  <img src="img/Fbeta.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">Figure: Formula of F-measure</figcaption>
+</figure> <br>
 
 <p>
     In the above formulation, the importance of each term can be provided using different values for b. 
     Most commonly used value for b is 1, which is known as F-1 measure. 
     G-measure is similar to that of F-measure, but it uses geometric mean instead of harmonic mean.
 </p> 
-<img src="img/Fmeasure.png" alt=""> <br>
-<img src="img/Gmeasure.png" alt="">
+
+<figure class="figure">
+  <img src="img/Fmeasure.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">Figure: Formula of F-1</figcaption>
+</figure> <br>
+
+
+<figure class="figure">
+  <img src="img/Gmeasure.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">Figure: Formula of G-measure</figcaption>
+</figure>
 
 <h2>Conclusion</h2>
 <p>
@@ -150,7 +187,7 @@ The formula to calculate the recall is as follow: <br>
 
 </div>
 
-<footer class="container-md text-white bg-dark bg-gradient">#worldrecordholder #training #internship  #makingindiafutureready 
+<footer class="container-md text-warning bg-dark bg-gradient">#worldrecordholder #training #internship  #makingindiafutureready 
     #summer #summertraining #python #machinelearning #docker #rightmentor #deepknowledge #linuxworld #vimaldaga #righteducation
 </footer>
 </body>
