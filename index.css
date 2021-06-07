@@ -1,7 +1,7 @@
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-body {
+*::selection {
     color: beige;
     background-color: #252525;
 }
